@@ -4,7 +4,27 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 100%;
 
+    /*--- font-size var ---*/
+    --fs12: .75rem;
+    --fs14: 0.875rem;
+    --fs16: 1.125rem;
+    --fs20: 1.3125rem;
+    --fsl26: 1.625rem;
+    --fs30: 1.875rem;
+    --fs32: 2rem;
+
+
+    /*--- color var ---*/
+    --pri-clr-cream: hsl(30, 38%, 92%);
+    --neu-clr-dark-blue: hsl(212, 21%, 14%);
+    --neu-clr-grayish-blue: hsl(228, 12%, 48%);
+    --neu-clr-white: hsl(0, 0%, 100%);
+    --acc-clr-dark-cyan-1: hsl(158, 36%, 37%);
+    --acc-clr-dark-cyan-2: hsl(158, 36%, 20%);
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
