@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 html {
@@ -10,8 +10,10 @@ html {
 
     /*--- font-size var ---*/
     --fs12: .75rem;
+    --fs13: .813rem;
     --fs14: 0.875rem;
     --fs16: 1rem;
+    --fs17: 1.063rem;
     --fs18: 1.125rem;
     --fs20: 1.3125rem;
     --fs22: 1.375rem;
@@ -23,10 +25,18 @@ html {
     /* --- spacing --- */
     --sp5: .313rem;
     --sp10: .625rem;
+    --sp11: .688rem;
+    --sp12: .75rem;
     --sp15: .938rem;
+    --sp16: 1rem;
+    --sp17: 1.063rem;
+    --sp18: 1.125rem;
     --sp20: 1.3125rem;
     --sp25: 1.563rem;
+    --sp28: 1.75rem;
     --sp30: 1.875rem;
+    --sp35: 2.188rem;
+    --sp38: 2.375rem;
     --sp40: 2.5rem;
     --sp50: 3.125rem;
 
@@ -36,8 +46,8 @@ html {
     --neu-clr-light-gray: hsl(204, 43%, 93%);
     --neu-clr-grayish-blue: hsl(218, 22%, 67%);
     --neu-clr-white: hsl(0, 0%, 100%);
-    --acc-clr-bright-yellow1: hsl(71, 73%, 47%);
-    --acc-clr-bright-yellow2: hsl(71, 73%, 43%);
+    --acc-clr-bright-yellow1: hsl(71, 73%, 50%);
+    --acc-clr-bright-yellow2: hsl(71, 73%, 48%);
 }
 
 body{
@@ -45,24 +55,26 @@ body{
     font-size: 1rem;
     font-family: 'Karla', sans-serif;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 h1,
 h2{
-    margin-bottom: var(--sp10);
+    letter-spacing: .03rem;
+    
 }
 
 h1{
     color: var(--pri-clr-cyan2);
-    font-size: var(--fs22);
+    font-size: var(--fs24);
     font-weight: 500;
-    letter-spacing: .03rem;
+    margin-bottom: var(--sp16);
 }
 
 h2{
     font-size: var(--fs18);
     font-weight: 400;
+    margin-bottom: var(--sp10);
 }
 
 a:link{
@@ -73,8 +85,10 @@ a.btn:link,
 a.btn:visited{
     display: inline-block;
     background-color: var(--acc-clr-bright-yellow1);
-    padding: .5rem;
-    border-radius: .2rem;
+    padding: var(--sp12);
+    text-align: center;
+    border-radius: .313rem;
+    box-shadow: 0px 2px 3px 2px rgba(90, 90, 90, 0.1), 0px 4px 7px 3px rgba(90, 90, 90, 0.2);
 }
 
 a.btn:hover,
@@ -102,10 +116,12 @@ a.btn:active{
     align-items: flex-start;
     overflow: hidden;
     border-radius: .625rem;
+    box-shadow: 0px 2px 3px 2px rgba(90, 90, 90, 0.1), 0px 4px 7px 3px rgba(90, 90, 90, 0.2);
 }
 
 .box-1,.box-2,.box-3{
-    padding: var(--sp40);
+    height: 100%;
+    padding: var(--sp38) var(--sp40);
 }
 
 .box-1{
@@ -128,7 +144,56 @@ a.btn:active{
 
 /* box 1 */
 
+.box-1 .sub-heading{
+    color: var(--acc-clr-bright-yellow1);
+    font-size: var(--fs17);
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+    margin-bottom: var(--sp10);
+}
 
+.box-1 p{
+    color: var(--neu-clr-grayish-blue);
+}
+
+/* box 2 */
+
+.fees{
+    display: flex;
+    align-items: center;
+    gap: var(--sp15);
+    font-weight: 200;
+
+}
+
+.price{
+    font-size: var(--fs32);
+    font-weight: 500;
+    letter-spacing: .1rem;
+    line-height: 1.3;
+}
+
+.price-desc{
+    font-size: var(--fs16);
+    margin-bottom: var(--sp28);
+}
+
+/* box 3 */
+
+.box-3{
+    /* align-content: center; */
+}
+
+.box-3 h2{
+    margin-bottom: var(--sp15);
+}
+
+.box-3 ul{
+    list-style: none;
+    font-size: var(--fs13);
+    font-weight: 200;
+    letter-spacing: 0.02rem;
+}
 
 
 
